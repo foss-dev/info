@@ -1,6 +1,6 @@
 # Site Information Tool
 
-This project built with Python to get information about web sites.
+This project built with Python to get information about websites.
 
 **Status**: Development
 
