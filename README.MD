@@ -40,15 +40,18 @@ Parameters: ['domain']
 
 It will show site info for example:
 
+- cms (Eg: WordPress, Drupal, Discourse)
 - status_code
 - title
 - scripts
 - css_list
+- links (tag)
+- meta
 
 # To-Do
 
 - [ ] Improvement for admin finder
-- [ ] Improvement for site info
-- [ ] Front-end for the front-end
-- [ ] Technology checker (Eg: wordpress, ghost, joomla)
+- [x] Improvement for site info
+- [ ] Front-end
+- [x] Technology checker (Eg: wordpress, ghost, joomla)
 - [ ] New ideas
