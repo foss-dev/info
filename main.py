@@ -1,6 +1,10 @@
 from flask import Flask, jsonify, request
 
-from modules import m_dns, m_port, m_admin_finder, m_site
+from modules import (
+    m_dns, m_port, m_admin_finder, m_site,
+    m_cve
+)
+
 from util import u_domain
 
 app = Flask(__name__)
@@ -40,6 +44,14 @@ def site_info():
     domain = u_domain.domain_resolve(request.form['domain'])
 
     data = m_site.info(domain)
+
+    return jsonify(data)
+
+@app.route('/cve', methods=['POST'])
+def cve_query():
+    keyword = request.form["keyword"]
+
+    data = m_cve.cve_result(keyword)
 
     return jsonify(data)
 

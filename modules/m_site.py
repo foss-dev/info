@@ -1,6 +1,8 @@
 import requests as r
-from bs4 import BeautifulSoup
 import re
+
+from bs4 import BeautifulSoup
+
 
 cms_list = [
     "WordPress", "Joomla", "Ghost", "Drupal",
