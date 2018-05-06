@@ -86,6 +86,14 @@ It will show your local and public IP address.
 
 **keywords: no**
 
+## /pwned
+
+It will show have you been pwned.
+
+**http verbs: ['POST']**
+
+**keywords: ['type => have_i_been_pwned, hacked_emails, password', 'keyword => mail or plaintext password']**
+
 # To-Do
 
 - [ ] Improvement for admin finder
