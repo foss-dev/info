@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 
 from modules import (
     m_dns, m_port, m_admin_finder, m_site,
-    m_cve
+    m_cve, m_ip, m_pwned
 )
 
 from util import u_domain
@@ -52,6 +52,28 @@ def cve_query():
     keyword = request.form["keyword"]
 
     data = m_cve.cve_result(keyword)
+
+    return jsonify(data)
+
+@app.route('/ip', methods=['POST'])
+def ip_query():
+
+    data = m_ip.get_ip(request)
+
+    return jsonify(data)
+
+@app.route('/pwned', methods=['POST'])
+def pwned_query():
+
+    try:
+        query_type = request.form["type"]
+    except:
+        query_type = "have_i_been_pwned"
+    
+
+    keyword = request.form["keyword"]
+
+    data = m_pwned.pwned(query_type, keyword)
 
     return jsonify(data)
 

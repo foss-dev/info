@@ -8,11 +8,11 @@ This project built with Python to get information about websites.
 
 All endpoints will return json format.
 
-**/dns**
+## /dns
 
-http verbs: ['POST']
+**http verbs: ['POST']**
 
-Parameters: ['domain']
+**Parameters: ['domain']**
 
 It will show dns records. You can extend record types like below:
 
@@ -20,19 +20,19 @@ It will show dns records. You can extend record types like below:
 m_dns.types.append('AAAA')
 ```
 
-**/port**
+## /port
 
-http verbs: ['POST']
+**http verbs: ['POST']**
 
-Parameters: ['domain', 'port']
+**Parameters: ['domain', 'port']**
 
 It will show port status of domain you declared
 
-**/find_admin**
+## /find_admin
 
-http verbs: ['POST']
+**http verbs: ['POST']**
 
-Parameters: ['domain']
+**Parameters: ['domain']**
 
 It will try to find admin panel of website. You can extend panel endpoints like below:
 
@@ -40,11 +40,11 @@ It will try to find admin panel of website. You can extend panel endpoints like 
 m_admin_finder.endpoints.append('myadmin')
 ```
 
-**/site_info**
+## /site_info
 
-http verbs: ['POST']
+**http verbs: ['POST']**
 
-Parameters: ['domain']
+**Parameters: ['domain']**
 
 It will show site info for example:
 
@@ -56,11 +56,11 @@ It will show site info for example:
 - links (tag)
 - meta
 
-**/cve**
+## /cve
 
-http verbs: ['POST']
+**http verbs: ['POST']**
 
-Parameters: ['keyword']
+**Parameters: ['keyword']**
 
 It will show CVE results from NVD. Return type will be json like below (search for linux):
 
@@ -78,6 +78,14 @@ It will show CVE results from NVD. Return type will be json like below (search f
 },
 ```
 
+## /ip
+
+It will show your local and public IP address.
+
+**http verbs: ['POST']**
+
+**keywords: no**
+
 # To-Do
 
 - [ ] Improvement for admin finder
@@ -85,4 +93,6 @@ It will show CVE results from NVD. Return type will be json like below (search f
 - [ ] Front-end
 - [x] Technology checker (Eg: wordpress, ghost, joomla)
 - [x] CVE Search
+- [x] IP Information
+- [x] Have I been Pwned?
 - [ ] New ideas
