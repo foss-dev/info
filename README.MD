@@ -84,7 +84,7 @@ It will show your local and public IP address.
 
 **http verbs: ['POST']**
 
-**keywords: no**
+**Parameters: no**
 
 ## /pwned
 
@@ -92,7 +92,7 @@ It will show have you been pwned.
 
 **http verbs: ['POST']**
 
-**keywords: ['type => have_i_been_pwned, hacked_emails, password', 'keyword => mail or plaintext password']**
+**Parameters: ['type => have_i_been_pwned, hacked_emails, password', 'keyword => mail or plaintext password']**
 
 # To-Do
 
