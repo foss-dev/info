@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 
 from modules import (
     m_dns, m_port, m_admin_finder, m_site,
-    m_cve, m_ip, m_pwned, m_password
+    m_cve, m_ip, m_pwned, m_password, m_ip_block_scanner
 )
 
 from util import u_domain
@@ -97,6 +97,22 @@ def password_generate():
 
     data["password"] = m_password.generate(posts, length)
 
+    return jsonify(data)
+
+@app.route('/ip_block', methods=['POST'])
+def ip_block():
+    ip = request.form["ip"]
+    minimum = request.form["min"]
+    maximum = request.form["max"]
+    data = {}
+
+    if int(minimum) < 0 or int(maximum) > 32:
+        data = {
+            "error": "IP Network Format. Range format must be in 0/32"
+        }
+    else:
+        data = m_ip_block_scanner.scan(ip, minimum, maximum)
+    
     return jsonify(data)
 
 if __name__ == '__main__':

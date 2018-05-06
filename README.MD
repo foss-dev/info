@@ -102,6 +102,14 @@ It will generate secure password for you.
 
 **Parameters: ['lower => 1 or 0', 'upper => 1 or 0', 'numeric => 1 or 0', 'other => 1 or 0', 'all => 1 or 0'], ['length => default = 16, optional']**
 
+## /ip_block
+
+It will return ip block records with status true and false
+
+**http verbs: ['POST']**
+
+**Parameters: ['ip', 'min = 0', 'max = 32']
+
 # To-Do
 
 - [ ] Improvement for admin finder
@@ -112,4 +120,5 @@ It will generate secure password for you.
 - [x] IP Information
 - [x] Have I been Pwned?
 - [x] Password Generator
+- [x] IP BLock Scanner 
 - [ ] New ideas
