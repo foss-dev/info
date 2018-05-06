@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 
 from modules import (
     m_dns, m_port, m_admin_finder, m_site,
-    m_cve, m_ip, m_pwned
+    m_cve, m_ip, m_pwned, m_password
 )
 
 from util import u_domain
@@ -74,6 +74,28 @@ def pwned_query():
     keyword = request.form["keyword"]
 
     data = m_pwned.pwned(query_type, keyword)
+
+    return jsonify(data)
+
+@app.route('/password', methods=['POST'])
+def password_generate():
+    
+    data = {}
+    
+    try:
+        length = int(request.form["length"])
+    except:
+        length = 16
+
+    posts = {
+        "lower": request.form["lower"],
+        "upper": request.form["upper"],
+        "numeric": request.form["numeric"],
+        "other": request.form["other"],
+        "all": request.form["all"]
+    }
+
+    data["password"] = m_password.generate(posts, length)
 
     return jsonify(data)
 

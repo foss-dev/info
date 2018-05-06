@@ -94,6 +94,14 @@ It will show have you been pwned.
 
 **Parameters: ['type => have_i_been_pwned, hacked_emails, password', 'keyword => mail or plaintext password']**
 
+## /password
+
+It will generate secure password for you.
+
+**http verbs: ['POST']**
+
+**Parameters: ['lower => 1 or 0', 'upper => 1 or 0', 'numeric => 1 or 0', 'other => 1 or 0', 'all => 1 or 0'], ['length => default = 16, optional']**
+
 # To-Do
 
 - [ ] Improvement for admin finder
@@ -103,4 +111,5 @@ It will show have you been pwned.
 - [x] CVE Search
 - [x] IP Information
 - [x] Have I been Pwned?
+- [x] Password Generator
 - [ ] New ideas
