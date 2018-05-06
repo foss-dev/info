@@ -108,7 +108,7 @@ It will return ip block records with status true and false
 
 **http verbs: ['POST']**
 
-**Parameters: ['ip', 'min = 0', 'max = 32']
+**Parameters: ['ip', 'min = 0', 'max = 32']**
 
 # To-Do
 
