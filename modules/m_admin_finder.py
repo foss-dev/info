@@ -1,24 +1,27 @@
 import requests as r
 from time import sleep
+from os import getcwd, sep
 
-endpoints = [
-    'admin', 'administrator', 'wp-admin', 'login.php', 'auth',
-    'login', 'login.aspx', 'admin.php', 'admin.aspx',
-    'admin/login', 'panel'
-]
+filePath = getcwd()+sep+"extra"+sep+"acp.txt"
+endpoints = open(filePath, "r").readlines()
 
 def find_admin(domain):
     results = {}
-    
+
     for page in endpoints:
+        page = page.split()[0]
+        con = 0
         try:
             address = "{}/{}".format(domain, page)
-            
+
             tls = r.get("http://" + address)
-            
+
             if tls.status_code == 200 or tls.status_code == 403:
                 results[page] = True
+                con = 1
+                break
         except:
-            results[page] = False
-    
+            pass
+
+    if con != 1: results[page] = False
     return results

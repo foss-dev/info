@@ -1,4 +1,4 @@
-from dns import resolver, ipv4
+from dns import resolver
 
 """DNS Record Types"""
 types = [
@@ -24,7 +24,7 @@ types = [
 
 def dns_records(domain):
     records = {}
-    
+
     for t in types:
         try:
             response = resolver.query(domain, t)
@@ -32,5 +32,5 @@ def dns_records(domain):
                 records[t] = data.to_text()
         except:
             records[t] = "null"
-    
+
     return records
