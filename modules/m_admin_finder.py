@@ -1,5 +1,4 @@
 import requests as r
-from time import sleep
 from os import getcwd, sep
 
 filePath = getcwd()+sep+"extra"+sep+"acp.txt"

@@ -110,6 +110,14 @@ It will return ip block records with status true and false
 
 **Parameters: ['ip', 'min = 0', 'max = 32']**
 
+## /mybbPluginScanner
+
+It will scan the MyBB plugins to report possible exploits.
+
+**http verbs: ['POST']**
+
+**Parameters: ['domain']**
+
 # To-Do
 
 - [ ] Improvement for admin finder
@@ -120,5 +128,5 @@ It will return ip block records with status true and false
 - [x] IP Information
 - [x] Have I been Pwned?
 - [x] Password Generator
-- [x] IP BLock Scanner 
+- [x] IP BLock Scanner
 - [ ] New ideas
