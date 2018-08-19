@@ -1,0 +1,196 @@
+[
+    {
+        "pluginName": "MyBB Kingchat",
+        "pluginFile": "kingchat.php",
+        "bugs": [
+            {
+                "title": "Stored XSS",
+                "exdb": "http://www.exploit-db.com/exploits/23249/"
+            },
+            {
+                "title": "SQL Injection",
+                "exdb": "http://www.exploit-db.com/exploits/23105/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB Profile Wii Friend",
+        "pluginFile": "profilewfc.php",
+        "bugs": [
+            {
+                "title": "SQL UPDATE Injection and XSS",
+                "exdb": "http://www.exploit-db.com/exploits/23888"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB AwayList",
+        "pluginFile": "awaylist.php",
+        "bugs": [
+            {
+                "title": "SQL Injection",
+                "exdb": "http://www.exploit-db.com/exploits/23624/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB HM My Country Flags",
+        "pluginFile": "hmflags.php",
+        "bugs": [
+            {
+                "title": "SQL Injection",
+                "exdb": "http://www.exploit-db.com/exploits/23624/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB Profile Skype ID",
+        "pluginFile": "profileskype.php",
+        "bugs": [
+            {
+                "title": "SQL Injection and XSS",
+                "exdb": "http://www.exploit-db.com/exploits/23382/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB Social Sites",
+        "pluginFile": "socialsites.php",
+        "bugs": [
+            {
+                "title": "XSS",
+                "exdb": "http://www.exploit-db.com/exploits/23382/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB DyMy User Agent",
+        "pluginFile": "dymy_ua.php",
+        "bugs": [
+            {
+                "title": "SQL Injection",
+                "exdb": "http://www.exploit-db.com/exploits/23359/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB Facebook Profile",
+        "pluginFile": "profilefacebook.php",
+        "bugs": [
+            {
+                "title": "XSS",
+                "exdb": "http://www.exploit-db.com/exploits/23355/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB AJAX Chat",
+        "pluginFile": "AJAXChat.php",
+        "bugs": [
+            {
+                "title": "Stored XSS",
+                "exdb": "http://www.exploit-db.com/exploits/23354/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB MyYoutube",
+        "pluginFile": "youtube.php",
+        "bugs": [
+            {
+                "title": "Post SQL Injection",
+                "exdb": "http://www.exploit-db.com/exploits/23353/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB TipsOfTheDay",
+        "pluginFile": "tipsoftheday.php",
+        "bugs": [
+            {
+                "title": "Multiple Vulnerabilities",
+                "exdb": "http://www.exploit-db.com/exploits/23322/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB Profile Blogs",
+        "pluginFile": "profileblogs.php",
+        "bugs": [
+            {
+                "title": "SQL Injection ve XSS Stored",
+                "exdb": "http://www.exploit-db.com/exploits/23287/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB Bank-v3",
+        "pluginFile": "bank.php",
+        "bugs": [
+            {
+                "title": "Post SQL Injection",
+                "exdb": "http://www.exploit-db.com/exploits/23284/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB Follower User",
+        "pluginFile": "SuscribeUsers.php",
+        "bugs": [
+            {
+                "title": "SQL Injection",
+                "exdb": "http://www.exploit-db.com/exploits/22405/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB Profile Albums",
+        "pluginFile": "profilealbums.php",
+        "bugs": [
+            {
+                "title": "SQL Injection",
+                "exdb": "http://www.exploit-db.com/exploits/22003/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB MyStatus",
+        "pluginFile": "mystatus.php",
+        "bugs": [
+            {
+                "title": "SQL Injection",
+                "exdb": "http://www.exploit-db.com/exploits/17972/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB Forum Userbar",
+        "pluginFile": "userbarplugin.php",
+        "bugs": [
+            {
+                "title": "SQL Injection",
+                "exdb": "http://www.exploit-db.com/exploits/17962/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB Advanced Forum Signatures",
+        "pluginFile": "afsignatures.php",
+        "bugs": [
+            {
+                "title": "SQL Injection",
+                "exdb": "http://www.exploit-db.com/exploits/17962/"
+            }
+        ]
+    },
+    {
+        "pluginName": "MyBB MyTabs",
+        "pluginFile": "mytabs.php",
+        "bugs": [
+            {
+                "title": "SQL Injection",
+                "exdb": "http://www.exploit-db.com/exploits/17595/"
+            }
+        ]
+    }
+]

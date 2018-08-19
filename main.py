@@ -2,7 +2,8 @@ from flask import Flask, jsonify, request
 
 from modules import (
     m_dns, m_port, m_admin_finder, m_site,
-    m_cve, m_ip, m_pwned, m_password, m_ip_block_scanner
+    m_cve, m_ip, m_pwned, m_password, m_ip_block_scanner,
+    m_myBBPluginScanner
 )
 
 from util import u_domain
@@ -15,7 +16,7 @@ def dns_query():
     data = {}
     try:
         domain = u_domain.domain_resolve(request.form['domain'])
-    
+
         data = m_dns.dns_records(domain)
     except:
         data = {}
@@ -30,7 +31,7 @@ def port_query():
     data = m_port.check_port(domain, port)
 
     return jsonify(data)
-    
+
 @app.route('/find_admin', methods=['POST'])
 def admin_query():
     domain = u_domain.domain_resolve(request.form['domain'])
@@ -69,7 +70,7 @@ def pwned_query():
         query_type = request.form["type"]
     except:
         query_type = "have_i_been_pwned"
-    
+
 
     keyword = request.form["keyword"]
 
@@ -79,9 +80,9 @@ def pwned_query():
 
 @app.route('/password', methods=['POST'])
 def password_generate():
-    
+
     data = {}
-    
+
     try:
         length = int(request.form["length"])
     except:
@@ -112,7 +113,15 @@ def ip_block():
         }
     else:
         data = m_ip_block_scanner.scan(ip, minimum, maximum)
-    
+
+    return jsonify(data)
+
+@app.route('/mybbPluginScanner', methods=['POST'])
+def mybbPluginScanner():
+    domain = u_domain.domain_resolve(request.form['domain'])
+
+    data = m_myBBPluginScanner.pluginScanner(domain)
+
     return jsonify(data)
 
 if __name__ == '__main__':
