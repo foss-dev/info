@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request
 from modules import (
     m_dns, m_port, m_admin_finder, m_site,
     m_cve, m_ip, m_pwned, m_password, m_ip_block_scanner,
-    m_myBBPluginScanner
+    m_mybb_plugin_scanner
 )
 
 from util import u_domain
@@ -116,11 +116,11 @@ def ip_block():
 
     return jsonify(data)
 
-@app.route('/mybbPluginScanner', methods=['POST'])
-def mybbPluginScanner():
+@app.route('/mybb_plugin_scanner', methods=['POST'])
+def mybb_plugin_scanner():
     domain = u_domain.domain_resolve(request.form['domain'])
 
-    data = m_myBBPluginScanner.pluginScanner(domain)
+    data = m_mybb_plugin_scanner.plugin_scanner(domain)
 
     return jsonify(data)
 

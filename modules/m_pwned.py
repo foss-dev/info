@@ -23,13 +23,10 @@ def password(keyword):
     return resp.text
 
 def pwned(types, keyword):
-    data = {}
+    types_dict = {
+        'hacked_emails'    : lambda x: hacked_emails(x),
+        'have_i_been_pwned': lambda x: have_i_been_pwned(x),
+        'password'         : lambda x: {'password_count': password(x)}
+    }
 
-    if types == "have_i_been_pwned":
-        data = have_i_been_pwned(keyword)
-    elif types == "hacked_emails":
-        data = hacked_emails(keyword)
-    elif types == "password":
-        data["password_count"] = password(keyword)
-    
-    return data
+    return types_dict.get(types, lambda *args: None)(keyword)

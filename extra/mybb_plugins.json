@@ -1,7 +1,7 @@
 [
     {
-        "pluginName": "MyBB Kingchat",
-        "pluginFile": "kingchat.php",
+        "plugin_name": "MyBB Kingchat",
+        "plugin_file": "kingchat.php",
         "bugs": [
             {
                 "title": "Stored XSS",
@@ -14,8 +14,8 @@
         ]
     },
     {
-        "pluginName": "MyBB Profile Wii Friend",
-        "pluginFile": "profilewfc.php",
+        "plugin_name": "MyBB Profile Wii Friend",
+        "plugin_file": "profilewfc.php",
         "bugs": [
             {
                 "title": "SQL UPDATE Injection and XSS",
@@ -24,8 +24,8 @@
         ]
     },
     {
-        "pluginName": "MyBB AwayList",
-        "pluginFile": "awaylist.php",
+        "plugin_name": "MyBB AwayList",
+        "plugin_file": "awaylist.php",
         "bugs": [
             {
                 "title": "SQL Injection",
@@ -34,8 +34,8 @@
         ]
     },
     {
-        "pluginName": "MyBB HM My Country Flags",
-        "pluginFile": "hmflags.php",
+        "plugin_name": "MyBB HM My Country Flags",
+        "plugin_file": "hmflags.php",
         "bugs": [
             {
                 "title": "SQL Injection",
@@ -44,8 +44,8 @@
         ]
     },
     {
-        "pluginName": "MyBB Profile Skype ID",
-        "pluginFile": "profileskype.php",
+        "plugin_name": "MyBB Profile Skype ID",
+        "plugin_file": "profileskype.php",
         "bugs": [
             {
                 "title": "SQL Injection and XSS",
@@ -54,8 +54,8 @@
         ]
     },
     {
-        "pluginName": "MyBB Social Sites",
-        "pluginFile": "socialsites.php",
+        "plugin_name": "MyBB Social Sites",
+        "plugin_file": "socialsites.php",
         "bugs": [
             {
                 "title": "XSS",
@@ -64,8 +64,8 @@
         ]
     },
     {
-        "pluginName": "MyBB DyMy User Agent",
-        "pluginFile": "dymy_ua.php",
+        "plugin_name": "MyBB DyMy User Agent",
+        "plugin_file": "dymy_ua.php",
         "bugs": [
             {
                 "title": "SQL Injection",
@@ -74,8 +74,8 @@
         ]
     },
     {
-        "pluginName": "MyBB Facebook Profile",
-        "pluginFile": "profilefacebook.php",
+        "plugin_name": "MyBB Facebook Profile",
+        "plugin_file": "profilefacebook.php",
         "bugs": [
             {
                 "title": "XSS",
@@ -84,8 +84,8 @@
         ]
     },
     {
-        "pluginName": "MyBB AJAX Chat",
-        "pluginFile": "AJAXChat.php",
+        "plugin_name": "MyBB AJAX Chat",
+        "plugin_file": "AJAXChat.php",
         "bugs": [
             {
                 "title": "Stored XSS",
@@ -94,8 +94,8 @@
         ]
     },
     {
-        "pluginName": "MyBB MyYoutube",
-        "pluginFile": "youtube.php",
+        "plugin_name": "MyBB MyYoutube",
+        "plugin_file": "youtube.php",
         "bugs": [
             {
                 "title": "Post SQL Injection",
@@ -104,8 +104,8 @@
         ]
     },
     {
-        "pluginName": "MyBB TipsOfTheDay",
-        "pluginFile": "tipsoftheday.php",
+        "plugin_name": "MyBB TipsOfTheDay",
+        "plugin_file": "tipsoftheday.php",
         "bugs": [
             {
                 "title": "Multiple Vulnerabilities",
@@ -114,8 +114,8 @@
         ]
     },
     {
-        "pluginName": "MyBB Profile Blogs",
-        "pluginFile": "profileblogs.php",
+        "plugin_name": "MyBB Profile Blogs",
+        "plugin_file": "profileblogs.php",
         "bugs": [
             {
                 "title": "SQL Injection ve XSS Stored",
@@ -124,8 +124,8 @@
         ]
     },
     {
-        "pluginName": "MyBB Bank-v3",
-        "pluginFile": "bank.php",
+        "plugin_name": "MyBB Bank-v3",
+        "plugin_file": "bank.php",
         "bugs": [
             {
                 "title": "Post SQL Injection",
@@ -134,8 +134,8 @@
         ]
     },
     {
-        "pluginName": "MyBB Follower User",
-        "pluginFile": "SuscribeUsers.php",
+        "plugin_name": "MyBB Follower User",
+        "plugin_file": "SuscribeUsers.php",
         "bugs": [
             {
                 "title": "SQL Injection",
@@ -144,8 +144,8 @@
         ]
     },
     {
-        "pluginName": "MyBB Profile Albums",
-        "pluginFile": "profilealbums.php",
+        "plugin_name": "MyBB Profile Albums",
+        "plugin_file": "profilealbums.php",
         "bugs": [
             {
                 "title": "SQL Injection",
@@ -154,8 +154,8 @@
         ]
     },
     {
-        "pluginName": "MyBB MyStatus",
-        "pluginFile": "mystatus.php",
+        "plugin_name": "MyBB MyStatus",
+        "plugin_file": "mystatus.php",
         "bugs": [
             {
                 "title": "SQL Injection",
@@ -164,8 +164,8 @@
         ]
     },
     {
-        "pluginName": "MyBB Forum Userbar",
-        "pluginFile": "userbarplugin.php",
+        "plugin_name": "MyBB Forum Userbar",
+        "plugin_file": "userbarplugin.php",
         "bugs": [
             {
                 "title": "SQL Injection",
@@ -174,8 +174,8 @@
         ]
     },
     {
-        "pluginName": "MyBB Advanced Forum Signatures",
-        "pluginFile": "afsignatures.php",
+        "plugin_name": "MyBB Advanced Forum Signatures",
+        "plugin_file": "afsignatures.php",
         "bugs": [
             {
                 "title": "SQL Injection",
@@ -184,8 +184,8 @@
         ]
     },
     {
-        "pluginName": "MyBB MyTabs",
-        "pluginFile": "mytabs.php",
+        "plugin_name": "MyBB MyTabs",
+        "plugin_file": "mytabs.php",
         "bugs": [
             {
                 "title": "SQL Injection",

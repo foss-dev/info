@@ -1,26 +1,16 @@
-import requests as r
-from os import getcwd, sep
+import os, requests
 
-filePath = getcwd()+sep+"extra"+sep+"acp.txt"
-endpoints = open(filePath, "r").readlines()
+file_path = os.path.join(os.path.dirname(__file__), '..', 'extra', 'acp.txt')
+endpoints = map(lambda x: x.strip(), open(file_path, 'r').readlines())
 
 def find_admin(domain):
-    results = {}
+    for panel in endpoints:
+        request_url = 'http://' + '/'.join([domain, panel.lstrip('/')])
 
-    for page in endpoints:
-        page = page.split()[0]
-        con = 0
-        try:
-            address = "{}/{}".format(domain, page)
+        try: resp_code = requests.get(request_url).status_code
+        except: continue
 
-            tls = r.get("http://" + address)
+        if resp_code in [200, 301, 403]:
+            return {domain: request_url}
 
-            if tls.status_code == 200 or tls.status_code == 403:
-                results[page] = True
-                con = 1
-                break
-        except:
-            pass
-
-    if con != 1: results[page] = False
-    return results
+    return {domain: False}

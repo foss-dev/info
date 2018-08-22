@@ -110,7 +110,7 @@ It will return ip block records with status true and false
 
 **Parameters: ['ip', 'min = 0', 'max = 32']**
 
-## /mybbPluginScanner
+## /mybb_plugin_scanner
 
 It will scan the MyBB plugins to report possible exploits.
 
