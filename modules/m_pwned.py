@@ -29,4 +29,4 @@ def pwned(types, keyword):
         'password'         : lambda x: {'password_count': password(x)}
     }
 
-    return types_dict.get(types, lambda: None)(keyword)
+    return types_dict.get(types, lambda *args: None)(keyword)
