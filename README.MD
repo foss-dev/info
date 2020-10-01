@@ -1,8 +1,9 @@
-# Site description Tools
+# Site Information Tool 
+=======
 
-This project built with Python to get information about websites.
+This project built with Python to get more information about websites.
 
-**Status**: Development
+**Status**: Website development
 
 # Endpoints
 
