@@ -207,3 +207,6 @@ affiliate.php
 adm_auth.php
 memberadmin.php
 administratorlogin.php
+Adminlogin.html
+Phpadmin.php
+Myadmin.php
