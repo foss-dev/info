@@ -1,5 +1,6 @@
-# Site Information Tool 
-=======
+
+# SITE INFORMATION TOOL
+
 
 This project built with Python is to get information about websites.
 =======
