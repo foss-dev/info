@@ -1,8 +1,11 @@
+
 # SITE INFORMATION TOOL
 
-This amazing project built with Python to get information about websites.
 
-**Status**: Development
+This project built with Python is to get information about websites.
+=======
+
+**Status**: Website development
 
 # Endpoints
 
@@ -26,7 +29,7 @@ m_dns.types.append('AAAA')
 
 **Parameters: ['domain', 'port']**
 
-It will show port status of domain you declared
+It will show port status of domain you declared.
 
 ## /find_admin
 
@@ -104,7 +107,7 @@ It will generate secure password for you.
 
 ## /ip_block
 
-It will return ip block records with status true and false
+It will return ip block records with status true and false.
 
 **http verbs: ['POST']**
 
